@@ -1,0 +1,548 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(268, 58%, 48%);
+  --first-color-alt: hsl(268, 28%, 38%);
+  --second-color: hsl(335, 88%, 56%);
+  --second-color-alt: hsl(328, 78%, 38%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(252, 100%, 87%);
+  --body-color: hsl(268, 58%, 22%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --biggest-font-size: 2rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1152px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--logo,
+.nav--toggle,
+.nav--close{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nav--logo{
+  color: var(--text-color);
+  column-gap: .5rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.nav--logo{
+  font-size: 1.25rem;
+  font-weight: initial;
+}
+
+.nav--toggle,
+.nav--close{
+  background-color: var(--first-color-alt);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1023px){
+  .nav--menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--body-color);
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 0 16px hsla(268, 58%, 4%, .2);
+    padding: 6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    transition: right .4s;
+  }
+}
+
+.nav--list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.nav--link{
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav--link:hover{
+  color: var(--title-color);
+}
+
+.nav--button{
+  display: inline-block;
+  width: max-content;
+  background-color: var(--body-color);
+  border: 2px solid var(--text-color);
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav--close{
+  position: absolute;
+  top: .75rem;
+  right: 1.5rem;
+}
+
+/* Show menu */
+.show-menu{
+  right: 0;
+}
+
+/*=============== HOME ===============*/
+.home{
+  position: relative;
+  height: 100vh;
+}
+
+.home--container{
+  padding-top: 7rem;
+  display: grid;
+  row-gap: 3rem;
+}
+
+.home--container{
+  text-align: center;
+}
+
+.home--subtitle{
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
+  letter-spacing: 1px;
+}
+
+.home--title{
+  position: relative;
+  width: max-content;
+  margin: 0 auto .75rem;
+  font-size: var(--biggest-font-size);
+  color: var(--title-color);
+}
+
+.home--title img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home--title span{
+  position: relative;
+  z-index: 5;
+}
+
+.home--description{
+  line-height: 150%;
+  margin-bottom: 1.25rem;
+}
+
+.home--button{
+  display: inline-block;
+  background: linear-gradient(180deg,
+              var(--second-color),
+              var(--second-color-alt));
+  padding: 1.25rem 3rem;
+  border-radius: 4rem;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  box-shadow: 0 8px 32px hsla(268, 58%, 4%, .3),
+              inset 0 4px 8px hsla(0, 0%, 100%, .4);
+}
+
+.home--button:hover{
+    background: #6339f0;
+    transition: all 1s ease;
+}
+
+.home--images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+}
+
+.home--images img{
+  position: absolute;
+}
+
+.home--points{
+  width: 320px;
+  top: -1rem;
+}
+
+.home--rocket{
+  width: 220px;
+}
+
+.home--planet-1{
+  width: 110px;
+  top: 1.25rem;
+  left: 0.75rem;
+}
+
+.home--planet-2{
+  width: 70px;
+  right: 0;
+  top: -1.25rem;
+}
+
+.home--cloud-1,
+.home--cloud-2{
+  position: absolute;
+  bottom: 0;
+  max-width: initial;
+}
+
+.home--cloud-2{
+  width: 500px;
+  right: -4rem;
+}
+
+.home--cloud-1{
+  width: 700px;
+  right: -6rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 300px) {
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .home--title{
+    font-size: 1.75rem;
+  }
+}
+
+/* For taller devices */
+@media screen and (min-width: 376px) and (min-height: 800px) {
+  .home--container{
+    padding-top: 10rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+  .home--container{
+    grid-template-columns: 400px;
+    justify-content: center;
+  }
+
+  .nav--menu{
+    width: 60%;
+  }
+
+  .home--cloud-1{
+    width: 100%;
+    left: 0;
+  }
+  .home--cloud-2{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home{
+    display: grid;
+    place-content: center;
+  }
+  .home--container{
+    grid-template-columns: repeat(2, 350px);
+    padding-top: 0;
+  }
+  .home--content{
+    text-align: initial;
+  }
+
+  .home--title{
+    margin-inline: 0;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 1023px) {
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+  }
+  .nav--toggle,
+  .nav--close{
+    display: none;
+  }
+  .nav--menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 4.5rem;
+  }
+  .nav--list{
+    margin-left: auto;
+    flex-direction: row;
+    column-gap: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .container{
+    margin-inline: auto;
+  }
+
+  .home--container{
+    grid-template-columns: 460px 650px;
+    align-items: center;
+    z-index: 5;
+  }
+  .home--subtitle{
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.75rem;
+  }
+  .home--title{
+    letter-spacing: -3px;
+    margin-bottom: 1rem;
+  }
+  .home--title img{
+    width: 250px;
+    right: -0.75rem;
+  }
+  .home--description{
+    font-size: var(--h3-font-size);
+    margin-bottom: 3rem;
+  }
+  .home--images{
+    height: 450px;
+  }
+  .home--points{
+    width: 100%;
+    top: -2rem;
+    right: -1rem;
+  }
+  .home--rocket{
+    width: 450px;
+  }
+  .home--planet-1{
+    width: 210px;
+    left: 5rem;
+  }
+  .home--planet-2{
+    width: 130px;
+    right: -2rem;
+  }
+  .home--cloud-1,
+  .home--cloud-2{
+    bottom: -3rem;
+  }
+}
+
+.mycard__container {
+  display: grid;
+  row-gap: 3.5rem;
+  justify-content: center;
+  margin: 7rem;
+}
+
+.mycard__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.mycard__img {
+  width: 328px;
+  border-radius: 1.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.mycard__data {
+  width: 280px;
+  background-color: #fff;
+  color: #222;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mycard__description {
+  display: block;
+  font-size: 0.813rem;
+  margin-bottom: .25rem;
+  color: #666;
+}
+
+.mycard__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1d1d1d;
+  margin-bottom: .75rem;
+}
+
+.mycard__button {
+  text-decoration: none;
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: #6339f0;
+}
+
+.mycard__button:hover {
+  text-decoration: underline;
+}
+
+.mycard__article:hover .mycard__data {
+  animation: mycard-show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.mycard__article:hover {
+  animation: mycard-remove-overflow 2s forwards;
+}
+
+.mycard__article:not(:hover) {
+  animation: mycard-show-overflow 2s forwards;
+}
+
+.mycard__article:not(:hover) .mycard__data {
+  animation: mycard-remove-data 1s forwards;
+}
+
+@keyframes mycard-show-data {
+  50% { transform: translateY(-10rem);}
+  100% { transform: translateY(-7rem);}
+}
+@keyframes mycard-remove-overflow {
+  to { overflow: initial;}
+}
+@keyframes mycard-remove-data {
+  0% { transform: translateY(-7rem);}
+  50% { transform: translateY(-10rem);}
+  100% { transform: translateY(.5rem);}
+}
+@keyframes mycard-show-overflow {
+  0% { overflow: initial; pointer-events: none;}
+  50% { overflow: hidden;}
+}
+
+@media screen and (min-width: 768px) {
+  .mycard__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .mycard__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mycard__img {
+    width: 348px;
+  }
+  .mycard__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mycard__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
