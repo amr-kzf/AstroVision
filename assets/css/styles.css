@@ -167,7 +167,7 @@ align-items: center;
   width: max-content;
   background-color: var(--body-color);
   border: 2px solid var(--text-color);
-  padding: 1rem 3rem;
+  padding: 1rem 2.75rem;
   border-radius: 4rem;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -487,6 +487,11 @@ align-items: center;
   text-decoration: underline;
 }
 
+.mycard__article:hover .mycard__img {
+  filter: blur(1px) brightness(0.7);
+  transition: filter 0.4s;
+}
+
 .mycard__article:hover .mycard__data {
   animation: mycard-show-data 1s forwards;
   opacity: 1;
@@ -530,7 +535,7 @@ align-items: center;
 }
 @media screen and (min-width: 1120px) {
   .mycard__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .mycard__img {
     width: 348px;
