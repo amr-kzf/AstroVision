@@ -6,7 +6,7 @@ const lectures = [
       <h2>Learning Objective:</h2>
       <p class="float-left">To understand why finding exoplanets is difficult and to introduce the main methods used,
        focusing on the Transit Method.</p>
-      <img src="/assets/img/l-1.1.jpg" alt="Exoplanets" class="lecture-img-large float-right border-radius">
+      <img src="./assets/img/l-1.1.jpg" alt="Exoplanets" class="lecture-img-large float-right border-radius">
       <div class="clearfix"></div>
       <h3>1- What are Exoplanets?</h3>
       <p class="float-left">Exoplanets are planets that orbit a star outside of our Solar System.
@@ -296,3 +296,4 @@ sidebarItems.forEach((li,i)=>{
 // Start with first lecture
 
 showLecture(0);
+
