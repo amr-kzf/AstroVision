@@ -176,15 +176,15 @@ const lectures = [
 </table>
         </div>
       <h3>5. Real Examples (Kepler Planets)</h3>
-      <img src="assets/img/l-4.2.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-4.2.jpg" alt="Exoplanets" class="border-radius">
       <p><b>•	Kepler-4b:</b> Shows a shallow dip → small planet size.
       <br><b>•	Kepler-4b & 6b:</b> Both have very short orbital periods (~3.2 days) → very close to their stars.
       <br><b>•	Kepler-5b & 8b:</b> Show deeper dips → larger planets, blocking more starlight.
       <br><b>•	Kepler-7b: </b>Longer period (4.9 days) → farther orbit than the others.
       <br><b>Observation:</b>Most light curves have similar widths → meaning these planets have comparable orbital speeds or transit paths.
       </p>
-      <img src="assets/img/l-4.3.jpg" alt="Exoplanets" class="border-radius">
-      <img src="assets/img/l-4.4.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-4.3.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-4.4.jpg" alt="Exoplanets" class="border-radius">
       <h3>✨ Conclusion:</h3>
       <p>
       Depth = planet size 🌍
@@ -296,3 +296,4 @@ sidebarItems.forEach((li,i)=>{
 // Start with first lecture
 
 showLecture(0);
+
