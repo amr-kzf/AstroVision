@@ -6,12 +6,12 @@ const lectures = [
       <h2>Learning Objective:</h2>
       <p class="float-left">To understand why finding exoplanets is difficult and to introduce the main methods used,
        focusing on the Transit Method.</p>
-      <img src="assets/img/l-1.1.jpg" alt="Exoplanets" class="lecture-img-large float-right border-radius">
+      <img src="assets/img/L-1.1.jpg" alt="Exoplanets" class="lecture-img-large float-right border-radius">
       <div class="clearfix"></div>
       <h3>1- What are Exoplanets?</h3>
       <p class="float-left">Exoplanets are planets that orbit a star outside of our Solar System.
         The search for exoplanets is the search for new worlds, possibly habitable ones.</p>
-      <img src="assets/img/l-1.2.jpg" alt="Exoplanets" class="lecture-img-2 float-right border-radius">
+      <img src="assets/img/L-1.2.jpg" alt="Exoplanets" class="lecture-img-2 float-right border-radius">
       <div class="clearfix"></div>
       <h3>Looking for Indirect Signs!</h3>
       <p>Solution: Look for Indirect Effects Since we cannot see the planet directly, we look for changes in the star’s behavior caused by the planet's gravity or orbit. The planet leaves a "signature" on its star.</p>
@@ -19,11 +19,11 @@ const lectures = [
       <p>The Challenge: Why Can't We See Them?<br> 1. Distance: They are incredibly far away.<br> 2. Brightness: They are tiny and dark compared to their stars.
        <br>>The star’s light completely overwhelms the faint light reflected by the planet.</p>
       <h3>Two Key Detection Methods:</h3>
-      <img src="assets/img/l-1.3.png" alt="Exoplanets" class="lecture-img-full border-radius  ">
+      <img src="assets/img/L-1.3.png" alt="Exoplanets" class="lecture-img-full border-radius  ">
       <h3>The Transit Method</h3>
       <p>The Concept: If the planet’s orbit is aligned with our view, it briefly blocks a fraction of the starlight. <br>Why it Matters for Data Science: <br>1. Data Source: This method produces "Light Curves"—perfect time-series data for analysis
       <br>2. Model Training: This data is essential for training Machine Learning models to automatically identify exoplanets in vast amounts of telescope observations</p>
-      <img src="assets/img/l-1.4.png" alt="Exoplanets" class="lecture-img-large border-radius">
+      <img src="assets/img/L-1.4.png" alt="Exoplanets" class="lecture-img-large border-radius">
       <h3>Next Lesson → </h3> <p> We will dive deep into the Light Curve in Lesson 2! 🚀<b>.....</b></p>
       <button class="start-quiz-btn">Start Quiz</button>
     `,
@@ -55,14 +55,14 @@ const lectures = [
       <br>•	It stays<b> flat at the bottom </b>while the planet is blocking the star.
       <br>•	Then the curve goes<b> back up quickly </b>when the planet moves away.
       <br>This makes a shape like a<b> “U” </b>or a little<b> bowl</b>, and that’s the signal that a planet is there.</p>
-      <img src="assets/img/l-2.1.png" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-2.1.png" alt="Exoplanets" class="border-radius">
       <h3>Think of it like this:</h3>
       <p>Imagine a bright lamp. If you move a small coin in front of it for a moment, the lamp looks a little dimmer. The light curve is just the graph that shows this small change.
       <br>In this picture:
       <br>•	The star = the lamp.
       <br>•	The planet = the coin.
       </p>
-      <img src="assets/img/l-2.2.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-2.2.jpg" alt="Exoplanets" class="border-radius">
       <h3>Next Lesson → </h3> <p> Transit: the moment when planets reveal their secrets! 🚀<b>.....</b></p>
       <button class="start-quiz-btn">Start Quiz</button>
     `,
@@ -85,15 +85,15 @@ const lectures = [
       <p>A<b> transit </b>happens when a smaller object (like a planet) passes in front of a larger one (like a star).
       From Earth, it looks like a tiny dark spot moving across the star’s face.
       <br><b>•	Example in our Solar System: </b> Mercury or Venus passing in front of the Sun when they line up with Earth and the Sun.
-      <img src="assets/img/l-3.1.png" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-3.1.png" alt="Exoplanets" class="border-radius">
       <h3>Why is Transit Important?</h3>
       <p>Transits are one of the most powerful tools in modern astronomy. They help scientists to:
       <br>•<b>	Discover exoplanets:</b> When a planet crosses in front of its star, the star looks a little dimmer. Measuring this dip confirms the presence of a planet.
       <br>•	<b>Measure planet size & orbit:</b> The depth of the dip tells us how big the planet is, and the duration & repetition of the dip reveal its orbit and distance from the star.
       <br>•	<b>Study atmospheres: </b>During transit, some starlight passes through the planet’s atmosphere. By analyzing this light, scientists can detect gases like water vapor or methane — clues to whether the planet could be habitable.
       <br>•	<b>Historical importance: </b>In the 18th and 19th centuries, observing Venus transits helped astronomers calculate the distance between Earth and the Sun (the Astronomical Unit).
-      <img src="assets/img/l-3.2.jpg" alt="Exoplanets" class="border-radius">
-      <img src="assets/img/l-3.3.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-3.2.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-3.3.jpg" alt="Exoplanets" class="border-radius">
       <h3>Analogy:</h3>
       <p>Imagine a big lamp and you move a small coin across it. The lamp looks slightly dimmer while the coin is in front. That’s exactly what happens during a transit!</p>
       <h3>Next Lesson → </h3> <p>From Dips to Details: How Light Curves Reveal a Planet’s Size, Orbit, and Path! 🚀<b>.....</b></p>
@@ -145,7 +145,7 @@ const lectures = [
       <br><b>•	Conclusion: </b>Duration helps astronomers model the orbit’s geometry and confirm data accuracy.
       <br><b>•	Analogy:</b> A car passing straight across your field of view takes longer (long duration). A car speeding across just the edge takes less time (short duration).
       </p>
-      <img src="assets/img/l-4.1.jpg" alt="Exoplanets" class="border-radius">
+      <img src="assets/img/L-4.1.jpg" alt="Exoplanets" class="border-radius">
       <h3>📝 Properties at a Glance</h3>
       <div class="form">
       <table border="2"> 
@@ -294,4 +294,5 @@ sidebarItems.forEach((li,i)=>{
 });
 
 // Start with first lecture
+
 showLecture(0);
