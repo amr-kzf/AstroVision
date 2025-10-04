@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>AstroVision | Tutorial</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav--logo">
+            <i class="ri-rocket-2-line"></i> AstroVision
+         </a>
+
+         <div class="nav--menu" id="nav-menu">
+            <ul class="nav--list">
+               <li class="nav--item">
+                  <a href="index.html" class="nav--link">Home</a>
+               </li>
+
+                    <li class="nav--item">
+                  <a href="explore.html" class="nav--link">Explore</a>
+               </li>
+
+                    <li class="nav--item">
+                  <a href="tutorial.html" class="nav--link">Tutorial</a>
+               </li>
+
+               <li class="nav--item">
+                  <a href="analysis.html" class="nav--link">Analysis</a>
+               </li>
+            </ul>
+
+            <a href="model.html" class="nav--button">Model</a>
+
+            <!-- close button -->
+             <div class="nav--close" id="nav-close">
+               <i class="ri-close-line"></i>
+             </div>
+         </div>
+
+         <!-- Toggle Button -->
+          <div class="nav--toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+      </nav>
+   </header>
+
+   <div class="selflearn-dashboard">
+     <!-- Sidebar -->
+     <aside class="selflearn-sidebar">
+       <ul>
+         <li class="active" data-lecture="0">Lecture 1: Introduction to Discovering Exoplanets</li>
+         <li data-lecture="1">Lecture 2: Light Curve</li>
+         <li data-lecture="2">Lecture 3: Tranist "The Planet's Hidden Signature"</li>
+         <li data-lecture="3">Lecture 4: Measuring Planet Properties from a Light Curve</li>
+       </ul>
+     </aside>
+     <!-- Main Content -->
+     <main class="selflearn-main">
+       <!-- Lecture Content -->
+       <section class="lecture-content" id="lecture-content">
+         <!-- Content will be injected by JS -->
+       </section>
+       <!-- Quiz Content -->
+       <section class="lecture-quiz" id="lecture-quiz" style="display:none;">
+         <!-- Quiz will be injected by JS -->
+       </section>
+     </main>
+   </div>
+
+   <!--=============== GSAP ===============-->
+   <script src="assets/js/gsap.min.js"></script>
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+   <!--=============== SELF LEARN JS ===============-->
+   <script src="assets/js/selflearn.js"></script>
+
+</body>
+</html>

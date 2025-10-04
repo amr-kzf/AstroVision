@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>AstroVision | Analysis</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav--logo">
+            <i class="ri-rocket-2-line"></i> AstroVision
+         </a>
+
+         <div class="nav--menu" id="nav-menu">
+            <ul class="nav--list">
+               <li class="nav--item">
+                  <a href="index.html" class="nav--link">Home</a>
+               </li>
+
+                    <li class="nav--item">
+                  <a href="explore.html" class="nav--link">Explore</a>
+               </li>
+
+                    <li class="nav--item">
+                  <a href="tutorial.html" class="nav--link">Tutorial</a>
+               </li>
+
+               <li class="nav--item">
+                  <a href="analysis.html" class="nav--link">Analysis</a>
+               </li>
+            </ul>
+
+            <a href="model.html" class="nav--button">Model</a>
+
+            <!-- close button -->
+             <div class="nav--close" id="nav-close">
+               <i class="ri-close-line"></i>
+             </div>
+         </div>
+
+         <!-- Toggle Button -->
+          <div class="nav--toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
+      </nav>
+   </header>
+
+   <main class="container analysis-main">
+     <section class="analysis-section">
+       <h1 class="analysis-title">🌌 Physical Classification</h1>
+       <img src="assets/img/3.jpg" alt="Physical Classification Diversity" class="analysis-img">
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔹 1. Stellar Temperature vs Luminosity</h2>
+         <p class="analysis-desc">This chart illustrates the relationship between a star’s effective temperature (St Teff) and its luminosity (St Lum).<br>It shows a clear trend — as the star’s temperature increases, its luminosity also rises.<br>This demonstrates that hotter stars tend to be brighter, aligning with the fundamental principles of stellar physics.</p>
+       </div>
+
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔹 2. Discovery Methods Comparison</h2>
+         <p class="analysis-desc">This bar chart compares the number of discovered exoplanets according to the discovery method used.<br>It reveals that the Transit Method dominates, detecting the largest number of planets.<br>Other methods, such as Radial Velocity and Microlensing, contribute fewer but scientifically valuable discoveries.</p>
+       </div>
+
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔹 3. Planetary Radius vs Mass</h2>
+         <p class="analysis-desc">This scatter plot displays the relationship between a planet’s radius (pl_Rade) and its mass (pl_Masse).<br>Most planets cluster around smaller radii and masses, representing Earth-sized and Neptune-sized worlds.<br>A few outliers with very large values likely correspond to massive gas giants like Jupiter.</p>
+       </div>
+
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔹 4. Visual Reference</h2>
+         <p class="analysis-desc">The image above represents the diversity of planets and stars, visually supporting the concept of physical classification in our universe.</p>
+       </div>
+     </section>
+
+     <section class="analysis-section">
+       <h1 class="analysis-title">K2 Exoplanet Discovery Data Analysis</h1>
+       <img src="assets/img/1.jpg" alt="Habitability and Host Star Analysis" class="analysis-img">
+       <div class="analysis-block">
+         <h3 class="analysis-subtitle" style="font-size:1.1rem; color:var(--second-color);">🔸 Habitable Status by Stellar Luminosity</h3>
+         <p class="analysis-desc">This bar chart shows that most of the discovered planets orbit stars that are <b>Too Hot</b>.<br>Only a few planets fall into the <b>Goldilocks Zone</b>, which is considered habitable.<br>A small number of planets are in the <b>Too Cold</b> range.</p>
+       </div>
+
+       <div class="analysis-block">
+         <h3 class="analysis-subtitle" style="font-size:1.1rem; color:var(--second-color);">🔸 Top 5 Host Stars by Luminosity</h3>
+         <p class="analysis-desc">This chart shows the <b>Top 5 stars</b> that host the most planets, based on stellar luminosity.<br><b>TRAPPIST-1</b> is the leading host star, followed by stars like <b>EPIC 211428</b> and <b>HIP 41378</b>.</p>
+       </div>
+
+       <div class="analysis-block">
+         <h3 class="analysis-subtitle" style="font-size:1.1rem; color:var(--second-color);">🔸 Disposition by Discovery Year</h3>
+         <p class="analysis-desc">This line chart tracks the <b>disposition</b> of discovered exoplanets over time:<br><br>
+           <b>CANDIDATE</b>: Awaiting confirmation.<br>
+           <b>CONFIRMED</b>: Verified planets.<br>
+           <b>FALSE POSITIVE</b>: Mistaken detections.<br>
+           <b>REFUTED</b>: Rejected detections.<br>
+           The data spans from ~2015 to 2025.
+         </p>
+       </div>
+     </section>
+
+     <section class="analysis-section">
+       <h1 class="analysis-title">Orbital Characteristics & Discovery Methods</h1>
+       <img src="assets/img/2.jpg" alt="Orbital Characteristics & Discovery Methods" class="analysis-img">
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔸 Orbital Period vs. Eccentricity</h2>
+         <p class="analysis-desc">This scatter plot visualizes the relationship between:<br><br>
+           <b>Orbital Period (days)</b> – how long a planet takes to orbit its star.<br>
+           <b>Orbital Eccentricity</b> – how elliptical or circular the orbit is.<br><br>
+           Most exoplanets have <b>low eccentricity</b>, meaning their orbits are nearly circular.
+         </p>
+       </div>
+
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔸 Discovery Methods by Orbital Period</h2>
+         <p class="analysis-desc">The bar chart shows the dominant <b>detection methods</b>:<br><br>
+           <b>Transit Method</b> is by far the most commonly used.<br>
+           <b>Microlensing</b> and <b>Radial Velocity</b> methods are less frequently used.
+         </p>
+       </div>
+
+       <div class="analysis-block">
+         <h2 class="analysis-subtitle">🔸 Average Stellar Temperature</h2>
+         <p class="analysis-desc">The average temperature of host stars is displayed as <b>5,178 K</b>, giving an idea of the star types involved.</p>
+       </div>
+     </section>
+   </main>
+
+   
+   <!--=============== GSAP ===============-->
+   <script src="assets/js/gsap.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
