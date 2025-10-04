@@ -23,7 +23,7 @@ const lectures = [
       <h3>The Transit Method</h3>
       <p>The Concept: If the planet’s orbit is aligned with our view, it briefly blocks a fraction of the starlight. <br>Why it Matters for Data Science: <br>1. Data Source: This method produces "Light Curves"—perfect time-series data for analysis
       <br>2. Model Training: This data is essential for training Machine Learning models to automatically identify exoplanets in vast amounts of telescope observations</p>
-      <img src="/assets/img/l-1.4.png" alt="Exoplanets" class="lecture-img-large border-radius">
+      <img src="assets/img/l-1.4.png" alt="Exoplanets" class="lecture-img-large border-radius">
       <h3>Next Lesson → </h3> <p> We will dive deep into the Light Curve in Lesson 2! 🚀<b>.....</b></p>
       <button class="start-quiz-btn">Start Quiz</button>
     `,
@@ -294,7 +294,4 @@ sidebarItems.forEach((li,i)=>{
 });
 
 // Start with first lecture
-
 showLecture(0);
-
-
