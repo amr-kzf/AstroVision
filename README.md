@@ -9,7 +9,8 @@ Welcome to **AstroVision** — our official website for the NASA Space Apps Chal
 
 🌍 **Website:** [https://amr-kzf.github.io/AstroVision/](https://amr-kzf.github.io/AstroVision/)  
 📱 **Android App:** `AstroVision.apk` (available in this repository)
-🌍 **Demo Videos:** (https://drive.google.com/drive/folders/1vwcJGiD4BxCBvHSHFu9SXUdUCMg7Ll0Z?usp=sharing))
+
+🌍 **Demo Videos:** (https://drive.google.com/drive/folders/1vwcJGiD4BxCBvHSHFu9SXUdUCMg7Ll0Z?usp=sharing)
 
 📱 **Our trained *AI model* is located in the folder:** `📂 streamlit_nasa_project_new` (available in this repository)
 
