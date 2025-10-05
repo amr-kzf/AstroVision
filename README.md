@@ -1,1 +1,14 @@
-# AstroVision
+# 🌌 AstroVision
+
+Welcome to **AstroVision** — our official website for the NASA Space Apps Challenge 🚀  
+
+🌍 **Website:** [https://amr-kzf.github.io/AstroVision/](https://amr-kzf.github.io/AstroVision/)  
+📱 **Android App:** `AstroVision.apk` (available in this repository)
+
+AstroVision is a space science visualization project that brings NASA data to life through interactive dashboards, self-learning modules, and AI-powered insights about exoplanets and the universe beyond. ✨  
+
+---
+
+### 👩‍🚀 Team AstroVision
+Part of the **NASA Space Apps Challenge 2025 **  
+Created with passion for exploration, innovation, and science. 💫
