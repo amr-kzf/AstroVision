@@ -4,11 +4,11 @@
 </p>
 
 <video width="400" controls>
-  <source src="videos/AstroVision%20full%20project%20without%20ChatBot.mp4" type="video/mp4">.
+  <source src="AstroVision full project without ChatBot.mp4" type="video/mp4">.
 </video>
 
 <video width="400" controls>
-  <source src="videos/AstroVision%20ChatBot.mp4" type="video/mp4">.
+  <source src="AstroVision ChatBot.mp4" type="video/mp4">.
 </video>
 
  🌌 AstroVision
