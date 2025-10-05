@@ -3,6 +3,14 @@
   <img src="assets/img/Demo.png" alt="AstroVision Banner" width="80%">
 </p>
 
+<video width="400" controls>
+  <source src="videos/AstroVision%20full%20project%20without%20ChatBot.mp4" type="video/mp4">.
+</video>
+
+<video width="400" controls>
+  <source src="videos/AstroVision%20ChatBot.mp4" type="video/mp4">.
+</video>
+
  🌌 AstroVision
 Welcome to **AstroVision** — our official project for the **NASA Space Apps Challenge 2025** 🚀
 Welcome to **AstroVision** — our official website for the NASA Space Apps Challenge 🚀  
