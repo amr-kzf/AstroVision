@@ -3,16 +3,15 @@
   <img src="assets/img/Demo.png" alt="AstroVision Banner" width="80%">
 </p>
 
-# 🌌 AstroVision
+ 🌌 AstroVision
 Welcome to **AstroVision** — our official project for the **NASA Space Apps Challenge 2025** 🚀
 Welcome to **AstroVision** — our official website for the NASA Space Apps Challenge 🚀  
 
 🌍 **Website:** [https://amr-kzf.github.io/AstroVision/](https://amr-kzf.github.io/AstroVision/)  
 📱 **Android App:** `AstroVision.apk` (available in this repository)
+📱 **Our trained *AI model* is located in the folder:** `📂 streamlit_nasa_project_new` (available in this repository)
 
 ## 🧠 Model Instructions
-
-📱 **Our trained *AI model* is located in the folder:** `📂 streamlit_nasa_project_new` (available in this repository)
 
 To learn how to run the AI model locally using Streamlit, check the detailed guide below 👇  
 
