@@ -1,50 +1,40 @@
 const lectures = [
   {
   title: "Lecture 1: Exoplanets",
-  content: `
-    <h1>Introduction to Discovering Exoplanets</h1>
-    <h2>Learning Objective:</h2>
-    <p class="float-left">To understand why finding exoplanets is difficult and to introduce the main methods used,
-     focusing on the Transit Method.</p>
-
-    <!-- YouTube Video -->
-    <div class="video-container" style="text-align:center; margin:20px 0;">
-      <iframe width="560" height="315" 
-      src="https://www.youtube.com/embed/STsI6IbPbGQ"
-      title="Exoplanet Discovery Video" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
-    </div>
-
-    <img src="assets/img/L-1.1.jpg" alt="Exoplanets" class="lecture-img-large float-right border-radius">
-    <div class="clearfix"></div>
-    <h3>1- What are Exoplanets?</h3>
-    <p class="float-left">Exoplanets are planets that orbit a star outside of our Solar System.
-      The search for exoplanets is the search for new worlds, possibly habitable ones.</p>
-    <img src="assets/img/L-1.2.jpg" alt="Exoplanets" class="lecture-img-2 float-right border-radius">
-    <div class="clearfix"></div>
-    <h3>Looking for Indirect Signs!</h3>
-    <p>Solution: Look for Indirect Effects Since we cannot see the planet directly, we look for changes in the star’s behavior caused by the planet's gravity or orbit. The planet leaves a "signature" on its star.</p>
-    <h3>2- The Challenge of Finding Them</h3>
-    <p>The Challenge: Why Can't We See Them?<br> 1. Distance: They are incredibly far away.<br> 2. Brightness: They are tiny and dark compared to their stars.
-     <br>>The star’s light completely overwhelms the faint light reflected by the planet.</p>
-    <h3>Two Key Detection Methods:</h3>
-    <img src="assets/img/L-1.3.png" alt="Exoplanets" class="lecture-img-full border-radius  ">
-    <h3>The Transit Method</h3>
-    <p>The Concept: If the planet’s orbit is aligned with our view, it briefly blocks a fraction of the starlight. <br>Why it Matters for Data Science: <br>1. Data Source: This method produces "Light Curves"—perfect time-series data for analysis
-    <br>2. Model Training: This data is essential for training Machine Learning models to automatically identify exoplanets in vast amounts of telescope observations</p>
-    <img src="assets/img/L-1.4.png" alt="Exoplanets" class="lecture-img-large border-radius">
-    <h3>Next Lesson → </h3> <p> We will dive deep into the Light Curve in Lesson 2! 🚀<b>.....</b></p>
-    <button class="start-quiz-btn">Start Quiz</button>
-  `,
-  quiz: [
-    {q:"1. What are exoplanets?",o:["A) Planets that orbit the Sun directly","B) Planets that orbit the moons of other planets","C) Planets that orbit a star outside our solar system","D) Planets found only in the Milky Way galaxy"],a:2},
-    {q:"2. What is the main challenge in observing exoplanets directly?",o:["A) Difficulty of sending spacecraft to them","B) Their great distance and the brightness of their stars","C) Their inability to reflect light at all","D) Their very high orbital speed"],a:1},
-    {q:"3. What does the Radial Velocity (Doppler) Method detect to find exoplanets?",o:["A) A drop in the star’s temperature","B) A slight wobble in the motion of the star","C) An increase in the planet’s rotation speed","D) A change in the planet’s color"],a:1},
-    {q:"4. What can we mainly learn from the Transit Method?",o:["A) The planet’s mass","B) The planet’s radius and size","C) The planet’s age","D) The distance between the planet and the galaxy"],a:1},
-    {q:"5. Why is data from the Transit Method important in data science?",o:["A) Because it provides direct images of planets","B) Because it doesn’t require advanced telescopes","C) Because it produces light curves analyzed as time series, useful for training AI models","D) Because it measures the planets’ temperatures accurately"],a:2}
-  ]
-},
+    content: `
+      <h1>Introduction to Discovering Exoplanets</h1>
+      <h2>Learning Objective:</h2>
+      <p class="float-left">To understand why finding exoplanets is difficult and to introduce the main methods used,
+       focusing on the Transit Method.</p>
+      <img src="assets/img/L-1.1.jpg" alt="Exoplanets" class="lecture-img-large float-right border-radius">
+      <div class="clearfix"></div>
+      <h3>1- What are Exoplanets?</h3>
+      <p class="float-left">Exoplanets are planets that orbit a star outside of our Solar System.
+        The search for exoplanets is the search for new worlds, possibly habitable ones.</p>
+      <img src="assets/img/L-1.2.jpg" alt="Exoplanets" class="lecture-img-2 float-right border-radius">
+      <div class="clearfix"></div>
+      <h3>Looking for Indirect Signs!</h3>
+      <p>Solution: Look for Indirect Effects Since we cannot see the planet directly, we look for changes in the star’s behavior caused by the planet's gravity or orbit. The planet leaves a "signature" on its star.</p>
+      <h3>2- The Challenge of Finding Them</h3>
+      <p>The Challenge: Why Can't We See Them?<br> 1. Distance: They are incredibly far away.<br> 2. Brightness: They are tiny and dark compared to their stars.
+       <br>>The star’s light completely overwhelms the faint light reflected by the planet.</p>
+      <h3>Two Key Detection Methods:</h3>
+      <img src="assets/img/L-1.3.png" alt="Exoplanets" class="lecture-img-full border-radius  ">
+      <h3>The Transit Method</h3>
+      <p>The Concept: If the planet’s orbit is aligned with our view, it briefly blocks a fraction of the starlight. <br>Why it Matters for Data Science: <br>1. Data Source: This method produces "Light Curves"—perfect time-series data for analysis
+      <br>2. Model Training: This data is essential for training Machine Learning models to automatically identify exoplanets in vast amounts of telescope observations</p>
+      <img src="assets/img/L-1.4.png" alt="Exoplanets" class="lecture-img-large border-radius">
+      <h3>Next Lesson → </h3> <p> We will dive deep into the Light Curve in Lesson 2! 🚀<b>.....</b></p>
+      <button class="start-quiz-btn">Start Quiz</button>
+    `,
+    quiz: [
+  {q:"1. What are exoplanets?",o:["A) Planets that orbit the Sun directly","B) Planets that orbit the moons of other planets","C) Planets that orbit a star outside our solar system","D) Planets found only in the Milky Way galaxy"],a:2},
+  {q:"2. What is the main challenge in observing exoplanets directly?",o:["A) Difficulty of sending spacecraft to them","B) Their great distance and the brightness of their stars","C) Their inability to reflect light at all","D) Their very high orbital speed"],a:1},
+  {q:"3. What does the Radial Velocity (Doppler) Method detect to find exoplanets?",o:["A) A drop in the star’s temperature","B) A slight wobble in the motion of the star","C) An increase in the planet’s rotation speed","D) A change in the planet’s color"],a:1},
+  {q:"4. What can we mainly learn from the Transit Method?",o:["A) The planet’s mass","B) The planet’s radius and size","C) The planet’s age","D) The distance between the planet and the galaxy"],a:1},
+  {q:"5. Why is data from the Transit Method important in data science?",o:["A) Because it provides direct images of planets","B) Because it doesn’t require advanced telescopes","C) Because it produces light curves analyzed as time series, useful for training AI models","D) Because it measures the planets’ temperatures accurately"],a:2}
+    ]
+  },
   {
     title: "Lecture 2: Light Curve",
     content: `
@@ -306,5 +296,6 @@ sidebarItems.forEach((li,i)=>{
 // Start with first lecture
 
 showLecture(0);
+
 
 
