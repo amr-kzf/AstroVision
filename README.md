@@ -1,5 +1,9 @@
 # 🌌 AstroVision
-
+<p align="center">
+  <img src="assets/img/Demo.png" alt="AstroVision Banner" width="80%">
+</p>
+# 🌌 AstroVision
+Welcome to **AstroVision** — our official project for the **NASA Space Apps Challenge 2025** 🚀
 Welcome to **AstroVision** — our official website for the NASA Space Apps Challenge 🚀  
 
 🌍 **Website:** [https://amr-kzf.github.io/AstroVision/](https://amr-kzf.github.io/AstroVision/)  
