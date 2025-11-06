@@ -260,10 +260,11 @@
    <script src="assets/js/selflearn.js"></script>
 
    <!--=============== CHATBOT JS ===============-->
-   <script type="module">
+    const GOOGLE_API_KEY = "AIzaSyAXHw1v6qVglOpErwn_QpzwzCsiRKPh7ck";
+
       import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 
-      const genAI = new GoogleGenerativeAI("AIzaSyAXHw1v6qVglOpErwn_QpzwzCsiRKPh7ck");
+      const genAI = new GoogleGenerativeAI(GOOGLE_API_KEY);
 
       const modal = document.getElementById("chatModal");
       const btn = document.getElementById("chatBtn");
@@ -277,15 +278,13 @@
             const userMsg = chatBox.value;
             appendMessage("🧑‍🚀 You", userMsg);
             chatBox.value = "";
-
             appendMessage("🤖 AstroBot", "Thinking...");
-
             try {
                const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
                const result = await model.generateContent(userMsg);
                const botReply = result.response.text();
                updateLastBotMessage(botReply);
-              //  speak(botReply); // فعّل هذا السطر
+              //  speak(botReply); // فعّل هذا إذا أردت
             } catch (error) {
                updateLastBotMessage("⚠️ Error: " + error.message);
             }
@@ -327,4 +326,5 @@
    </script>
 </body>
 </html>
+
 
