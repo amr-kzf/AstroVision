@@ -63,5 +63,5 @@ AstroVision is a space science visualization project that brings NASA data to li
 ---
 
 ### 👩‍🚀 Team AstroVision
-Part of the **NASA Space Apps Challenge 2025 **  
+Part of the (NASA Space Apps Challenge 2025)
 Created with passion for exploration, innovation, and science. 💫
